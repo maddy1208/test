@@ -10,3 +10,12 @@ jjj
 
 I added new feature
 final change
+
+
+
+
+Solving merge Conflicts:
+
+1. update the local main by #git pull origin main
+2. merge the local main to the current working branch (eg:branch1) #git merge main
+3. resolve the conflict and then push the code to remote from branch1
