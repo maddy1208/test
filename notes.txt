@@ -1,0 +1,50 @@
+GIT: (DVCS-DISTRIBUTED VERSION CONTROL SYSTEM)
+its a tool for version control system
+
+github,bitbucket,gitlab =>platforms to store codebase
+
+
+CONFIG:
+
+Your name will be attached to your commits. Set it with:
+# git config --global user.name  ""
+
+Your email is also attached to your commits. Set it with:
+# git config --global user.email ""
+
+Now let Git know who you are. This is important for version control systems, as each Git commit uses this information:
+
+Use --system to ser for all across teh computer
+Use --global to set the value for every repository on current user session.
+Use --local (the default) to set it only for the current repository.
+
+Configuration Preference:
+1. if local config present (.git/gitconfig)
+2. if global config present (~/.gitconfig)
+3. if system config present (/etc/gitconfig)
+
+#git config --list //List All Settings
+
+changing/unsetting values:
+To change a value, just run the git config command again with the new value.
+# git config --global user.email "sam@gmail.com"
+# git config --global user.email "sam123@gmail.com" //now this will be updated
+
+Set Default Branch Name:
+# git config --global init.defaultBranch main
+
+
+why main?
+It's not mecessary to have main we can rename or have anything
+To Git, a branch is just a reference file pointing to a specific commit. You can rename it, delete it, or call it whatever you like.
+However, there are three external reasons why main feels special:
+• Ecosystem Conventions: Third-party tools like GitHub, GitLab, and Bitbucket look for main by default to display your home page, run CI/CD deployment pipelines, or target Pull Requests.
+• Tool Defaults: When you type git init, Git automatically creates a first branch. Historically, it defaulted to master, and modern versions default to main.
+• Team Communication: Human developers expect the primary branch to be called main or master. If you use mymain, anyone else cloning your code will just need a heads-up so they know where to look.
+
+
+
+# git log
+# git status
+# git checkout <commit-id> //can switch to any previosly commited code
+# git checkout -f <commit-id> //force without saving new changes
