@@ -5,3 +5,17 @@ changed by branch1
 changed by branch11
 
 hey i edited somechanges by branch11 but not commiting to main so far
+hey i edited somechanges by branch11 but not commiting to main so far but now im making pr
+jjj
+
+I added new feature
+final change
+
+
+
+
+Solving merge Conflicts:
+
+1. update the local main by #git pull origin main
+2. merge the local main to the current working branch (eg:branch1) #git merge main
+3. resolve the conflict and then push the code to remote from branch1
