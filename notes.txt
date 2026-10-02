@@ -47,4 +47,25 @@ However, there are three external reasons why main feels special:
 # git log
 # git status
 # git checkout <commit-id> //can switch to any previosly commited code
-# git checkout -f <commit-id> //force without saving new changes
+# git checkout -f <commit-id> //force to previosly commited code without saving new changes
+
+
+# git branch b1  //creating new branch
+# git checkout b1 //can switch to branch
+# git checkout -b  b1  //can create and switch using this single command
+
+note: by default if we create a new branch,the parent branch will be the current working branch,
+if we want to explicitly say the parent branch we have to put parent branch at last,
+eg: # git branch b2 branch  //creating new branch from parent branch 
+
+
+git push --set-upstream origin branch2
+git push -u origin  branch3
+
+HEAD => current location of the git ,uaulayy its ponts to current branch ,When you run git checkout <branch>, you are telling Git to move the HEAD needle to a different branch.
+
+What is a "Detached HEAD"?
+Sometimes, you might run a command like git checkout <commit-hash> to look at an old version of your project from last week.
+
+
+git restore --staged <file> - Unstage a file
