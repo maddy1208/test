@@ -12,3 +12,4 @@ I added new feature
 final change
 
 commit 1
+commit 2
